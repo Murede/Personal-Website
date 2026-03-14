@@ -2,9 +2,10 @@ const projects = [
   {
     title: 'TTOMPH',
     description:
-      'Built as an engineering system project with a focus on reliability, modular design, and testable integration between hardware-facing logic and software workflows.',
+      'Designed a low-cost, real-time microplastics detection prototype for aquaculture using a 505 nm laser, a photodiode at 90 degrees for light-scatter sensing, and ESP32 Wi-Fi data transmission in a continuous-flow water system.',
     skills: ['Systems Integration', 'Embedded Mindset', 'Signal/Data Handling', 'Technical Documentation'],
     repoUrl: 'https://github.com/',
+    reportUrl: '/reports/ttomph-report.pdf',
   },
   {
     title: 'Food Vision Model',
@@ -12,6 +13,7 @@ const projects = [
       'Designed and trained a computer vision pipeline for food classification, including dataset preparation, model training, and evaluation for real-world ML performance.',
     skills: ['Python', 'PyTorch', 'Computer Vision', 'Model Validation'],
     repoUrl: 'https://github.com/',
+    reportUrl: null,
   },
   {
     title: 'Resistor Predictor CNN',
@@ -19,6 +21,7 @@ const projects = [
       'Developed a CNN model to predict resistor-related outputs from structured inputs, combining core electrical engineering domain understanding with machine learning optimization.',
     skills: ['CNN Architecture', 'Feature Engineering', 'Electrical Domain Modeling', 'Performance Tuning'],
     repoUrl: 'https://github.com/',
+    reportUrl: null,
   },
 ]
 
@@ -45,14 +48,26 @@ function Projects() {
                   </li>
                 ))}
               </ul>
-              <a
-                href={project.repoUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-5 inline-flex rounded-md border border-slate-300 px-4 py-2 text-xs font-medium text-slate-800 transition hover:border-slate-500"
-              >
-                View on GitHub
-              </a>
+              <div className="mt-5 flex flex-wrap gap-2">
+                <a
+                  href={project.repoUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex rounded-md border border-slate-300 px-4 py-2 text-xs font-medium text-slate-800 transition hover:border-slate-500"
+                >
+                  View on GitHub
+                </a>
+                {project.reportUrl ? (
+                  <a
+                    href={project.reportUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex rounded-md border border-slate-300 px-4 py-2 text-xs font-medium text-slate-800 transition hover:border-slate-500"
+                  >
+                    View Report
+                  </a>
+                ) : null}
+              </div>
             </article>
           ))}
         </div>
