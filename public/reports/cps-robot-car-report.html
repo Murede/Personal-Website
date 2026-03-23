@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber-Physical Robot Car Control Report</title>
+    <style>
+      body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; color: #0f172a; }
+      main { max-width: 900px; margin: 0 auto; padding: 48px 24px 64px; }
+      h1 { font-size: 2.25rem; margin-bottom: 0.5rem; }
+      h2 { margin-top: 2rem; font-size: 1.25rem; }
+      p, li { font-size: 1rem; line-height: 1.7; color: #334155; }
+      .hero { background: #fff; border: 1px solid #cbd5e1; border-radius: 20px; padding: 24px; }
+      img { width: 100%; border-radius: 16px; border: 1px solid #cbd5e1; margin-top: 1rem; }
+      .meta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1rem; }
+      .chip { background: #e2e8f0; color: #0f172a; padding: 8px 12px; border-radius: 999px; font-size: 0.875rem; }
+      a { color: #0f172a; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>Cyber-Physical Robot Car Control</h1>
+        <p>This short report summarizes the robot-car control program written for a cyber-physical systems lab, combining sensor input, decision logic, and actuator output in one control loop.</p>
+        <div class="meta">
+          <span class="chip">Python</span>
+          <span class="chip">Infrared Sensors</span>
+          <span class="chip">Ultrasonic Avoidance</span>
+          <span class="chip">Motor Control</span>
+        </div>
+        <img src="/reports/visuals/cps-robot-car.svg" alt="Robot car control loop diagram" />
+      </section>
+      <h2>What the project is about</h2>
+      <p>The program drives a small autonomous car by reading infrared line-following sensors, classifying the vehicle state, and issuing motor commands for straight motion, turning, junction handling, or recovery when the line is lost. It also adds obstacle avoidance using ultrasonic distance measurements.</p>
+      <h2>How it was created</h2>
+      <p>The implementation uses a <code>Car</code> class that initializes and manages multiple hardware modules: servo, ultrasonic sensor, motor driver, infrared sensors, ADC, buzzer, and LEDs. The report image is derived directly from the logic inside <code>mode_infrared()</code> and the obstacle-response branch that stops, signals, reverses, and turns when the path is blocked.</p>
+      <h2>Project artifact</h2>
+      <p>The visual in this report is not a generic diagram. It is a compact representation of the actual control path implemented in the source file, showing how sensor readings flow into decisions and then into motor and feedback outputs.</p>
+      <p><a href="/reports/cps-robot-car-project.zip">Download project source</a></p>
+    </main>
+  </body>
+</html>

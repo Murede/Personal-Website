@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer Learning on CIFAR Report</title>
+    <style>
+      body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; color: #0f172a; }
+      main { max-width: 900px; margin: 0 auto; padding: 48px 24px 64px; }
+      h1 { font-size: 2.25rem; margin-bottom: 0.5rem; }
+      h2 { margin-top: 2rem; font-size: 1.25rem; }
+      p, li { font-size: 1rem; line-height: 1.7; color: #334155; }
+      .hero { background: #fff; border: 1px solid #cbd5e1; border-radius: 20px; padding: 24px; }
+      img { width: 100%; border-radius: 16px; border: 1px solid #cbd5e1; margin-top: 1rem; }
+      .meta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1rem; }
+      .chip { background: #e2e8f0; color: #0f172a; padding: 8px 12px; border-radius: 999px; font-size: 0.875rem; }
+      a { color: #0f172a; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>Transfer Learning on CIFAR</h1>
+        <p>This short report summarizes the AISE3010 notebook that compares several image-classification training paths under a controlled experimental setup.</p>
+        <div class="meta">
+          <span class="chip">PyTorch</span>
+          <span class="chip">Transfer Learning</span>
+          <span class="chip">ResNet50</span>
+          <span class="chip">CIFAR10 / CIFAR100</span>
+        </div>
+        <img src="/reports/visuals/transfer-learning-cifar.svg" alt="Transfer learning workflow diagram" />
+      </section>
+      <h2>What the project is about</h2>
+      <p>The notebook investigates whether pretrained models improve classification performance compared with training from scratch. It covers a custom convolutional baseline, ImageNet transfer learning with two fine-tuning strategies, a Places365 transfer path, and a multi-stage path that adapts through CIFAR100 before the final CIFAR10 target.</p>
+      <h2>How it was created</h2>
+      <p>The project was built as a reproducible experiment pipeline with deterministic seeds, shared loaders, reusable training utilities, and reporting blocks for accuracy, macro-F1, learning curves, and confusion matrices. The visual above is derived from the notebook structure itself and mirrors the four-part evaluation flow implemented in the source file.</p>
+      <h2>Project artifact</h2>
+      <p>The report image is a compact rendering of the notebook’s experiment design: Part A scratch CNN, Part B ImageNet transfer, Part C Places365 transfer, and Part D multi-stage transfer. The downloadable notebook is available from the project card for full code and setup details.</p>
+      <p><a href="/reports/transfer-learning-cifar-project.zip">Download project notebook</a></p>
+    </main>
+  </body>
+</html>

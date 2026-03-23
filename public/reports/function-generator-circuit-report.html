@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Generator Circuit Simulation Report</title>
+    <style>
+      body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; color: #0f172a; }
+      main { max-width: 900px; margin: 0 auto; padding: 48px 24px 64px; }
+      h1 { font-size: 2.25rem; margin-bottom: 0.5rem; }
+      h2 { margin-top: 2rem; font-size: 1.25rem; }
+      p, li { font-size: 1rem; line-height: 1.7; color: #334155; }
+      .hero { background: #fff; border: 1px solid #cbd5e1; border-radius: 20px; padding: 24px; }
+      img { width: 100%; border-radius: 16px; border: 1px solid #cbd5e1; margin-top: 1rem; }
+      .meta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1rem; }
+      .chip { background: #e2e8f0; color: #0f172a; padding: 8px 12px; border-radius: 999px; font-size: 0.875rem; }
+      a { color: #0f172a; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>Function Generator Circuit Simulation</h1>
+        <p>This report summarizes the Micro-Cap circuit file used to model a function-generator design built from a waveform source, active amplifier stages, and a passive timing network.</p>
+        <div class="meta">
+          <span class="chip">Micro-Cap</span>
+          <span class="chip">Analog Design</span>
+          <span class="chip">Op-Amp Modeling</span>
+          <span class="chip">Waveform Generation</span>
+        </div>
+        <img src="/reports/visuals/function-generator-circuit.svg" alt="Function generator simulation structure" />
+      </section>
+      <h2>What the project is about</h2>
+      <p>The project focuses on modeling and validating a function-generator circuit in simulation. The file references a triangle-wave source, multiple resistor and capacitor elements, and op-amp models that shape or buffer the generated signal.</p>
+      <h2>How it was created</h2>
+      <p>The simulation is stored as a Micro-Cap <code>.cir</code> file with component definitions, waveform models, and schematic metadata. The attached visual is built from that file’s own references, including the triangle-wave model and op-amp model definitions, and presents the circuit as a readable high-level architecture.</p>
+      <h2>Project artifact</h2>
+      <p>The report image highlights the same core structure visible in the circuit file: waveform source, amplifier stages, and passive conditioning network. The download contains the original circuit files used for the simulation work.</p>
+      <p><a href="/reports/function-generator-circuit-project.zip">Download circuit files</a></p>
+    </main>
+  </body>
+</html>

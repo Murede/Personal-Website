@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#f8fafc"/>
+  <rect x="50" y="50" width="1100" height="600" rx="28" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="90" y="120" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#0f172a">Function Generator Circuit Simulation</text>
+  <text x="90" y="160" font-family="Arial, sans-serif" font-size="22" fill="#475569">Report graphic built from the Micro-Cap circuit file and its waveform / op-amp model references</text>
+
+  <rect x="95" y="230" width="300" height="150" rx="20" fill="#dbeafe"/>
+  <text x="130" y="285" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">Waveform Source</text>
+  <text x="130" y="325" font-family="Arial, sans-serif" font-size="22" fill="#334155">TRIANGLE model</text>
+  <text x="130" y="355" font-family="Arial, sans-serif" font-size="20" fill="#475569">PUL with VONE=3 and VZERO=-3</text>
+
+  <rect x="450" y="230" width="300" height="150" rx="20" fill="#dcfce7"/>
+  <text x="485" y="285" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">Active Stages</text>
+  <text x="485" y="325" font-family="Arial, sans-serif" font-size="22" fill="#334155">LM343 and TL082 op-amp models</text>
+  <text x="485" y="355" font-family="Arial, sans-serif" font-size="20" fill="#475569">analog shaping and amplification path</text>
+
+  <rect x="805" y="230" width="300" height="150" rx="20" fill="#fae8ff"/>
+  <text x="840" y="285" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">Passive Network</text>
+  <text x="840" y="325" font-family="Arial, sans-serif" font-size="22" fill="#334155">R1–R8 and C1–C4</text>
+  <text x="840" y="355" font-family="Arial, sans-serif" font-size="20" fill="#475569">timing and waveform conditioning</text>
+
+  <line x1="395" y1="305" x2="450" y2="305" stroke="#64748b" stroke-width="5"/>
+  <line x1="750" y1="305" x2="805" y2="305" stroke="#64748b" stroke-width="5"/>
+
+  <rect x="95" y="460" width="1010" height="120" rx="20" fill="#0f172a"/>
+  <text x="130" y="510" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Project artifact captured in the report</text>
+  <text x="130" y="550" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1">Micro-Cap schematic metadata references a 5 V triangle-wave source and JFET-input amplifier stages for signal generation</text>
+</svg>
