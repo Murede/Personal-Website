@@ -1,11 +1,23 @@
 const projects = [
   {
+    title: 'Coursework Portfolio Pack',
+    description:
+      'Curated archive of selected classwork spanning transfer learning on CIFAR datasets, BART-based abstractive summarization, cyber-physical robot control, and circuit simulation work. This download bundles the source artifacts I use to show technical depth across AI, embedded systems, and electrical engineering.',
+    skills: ['Deep Learning', 'NLP', 'Embedded Systems', 'Circuit Simulation'],
+    repoUrl: null,
+    reportUrl: null,
+    downloadUrl: '/reports/coursework-portfolio-pack.zip',
+    downloadLabel: 'Download Project Pack',
+  },
+  {
     title: 'TTOMPH',
     description:
       'Designed a low-cost, real-time microplastics detection prototype for aquaculture using a 505 nm laser, a photodiode at 90 degrees for light-scatter sensing, and ESP32 Wi-Fi data transmission in a continuous-flow water system.',
     skills: ['Systems Integration', 'Embedded Mindset', 'Signal/Data Handling', 'Technical Documentation'],
     repoUrl: 'https://github.com/',
     reportUrl: '/reports/ttomph-report.pdf',
+    downloadUrl: null,
+    downloadLabel: null,
   },
   {
     title: 'Food Vision Model',
@@ -14,6 +26,8 @@ const projects = [
     skills: ['Python', 'PyTorch', 'Computer Vision', 'Model Validation'],
     repoUrl: 'https://github.com/',
     reportUrl: null,
+    downloadUrl: null,
+    downloadLabel: null,
   },
   {
     title: 'Resistor Predictor CNN',
@@ -22,6 +36,8 @@ const projects = [
     skills: ['CNN Architecture', 'Feature Engineering', 'Electrical Domain Modeling', 'Performance Tuning'],
     repoUrl: 'https://github.com/',
     reportUrl: null,
+    downloadUrl: null,
+    downloadLabel: null,
   },
 ]
 
@@ -49,14 +65,16 @@ function Projects() {
                 ))}
               </ul>
               <div className="mt-5 flex flex-wrap gap-2">
-                <a
-                  href={project.repoUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex rounded-md border border-slate-300 px-4 py-2 text-xs font-medium text-slate-800 transition hover:border-slate-500"
-                >
-                  View on GitHub
-                </a>
+                {project.repoUrl ? (
+                  <a
+                    href={project.repoUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex rounded-md border border-slate-300 px-4 py-2 text-xs font-medium text-slate-800 transition hover:border-slate-500"
+                  >
+                    View on GitHub
+                  </a>
+                ) : null}
                 {project.reportUrl ? (
                   <a
                     href={project.reportUrl}
@@ -65,6 +83,14 @@ function Projects() {
                     className="inline-flex rounded-md border border-slate-300 px-4 py-2 text-xs font-medium text-slate-800 transition hover:border-slate-500"
                   >
                     View Report
+                  </a>
+                ) : null}
+                {project.downloadUrl ? (
+                  <a
+                    href={project.downloadUrl}
+                    className="inline-flex rounded-md border border-slate-300 px-4 py-2 text-xs font-medium text-slate-800 transition hover:border-slate-500"
+                  >
+                    {project.downloadLabel}
                   </a>
                 ) : null}
               </div>
