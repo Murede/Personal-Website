@@ -73,34 +73,45 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects" className="border-b border-slate-200">
-      <div className="mx-auto w-full max-w-6xl px-6 py-16 md:py-20">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">Projects</h2>
-        <p className="mt-3 max-w-2xl text-sm text-slate-600 sm:text-base">
+    <section id="projects" className="px-4 py-8">
+      <div className="mx-auto w-full max-w-6xl rounded-[2rem] border border-stone-300/70 bg-[#fbf8f2]/90 px-6 py-16 shadow-[0_22px_70px_rgba(15,23,42,0.05)] md:px-10 md:py-20">
+        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-500">Selected Work</p>
+        <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
+          Projects framed with more context and stronger visual structure.
+        </h2>
+        <p className="mt-4 max-w-3xl text-sm text-slate-600 sm:text-base">
           A selection of engineering work focused on robust implementation and measurable results.
         </p>
-        <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
           {projects.map((project) => (
-            <article key={project.title} className="rounded-xl border border-slate-200 p-5">
-              <h3 className="text-lg font-semibold text-slate-900">{project.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-slate-600">{project.description}</p>
-              <ul className="mt-4 flex flex-wrap gap-2">
+            <article
+              key={project.title}
+              className="group rounded-[1.5rem] border border-stone-200 bg-white/85 p-6 shadow-[0_14px_40px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(15,23,42,0.08)]"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <h3 className="text-2xl font-semibold text-slate-950">{project.title}</h3>
+                <span className="rounded-full border border-stone-200 bg-stone-100/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-stone-500">
+                  Project
+                </span>
+              </div>
+              <p className="mt-4 text-sm leading-relaxed text-slate-600">{project.description}</p>
+              <ul className="mt-5 flex flex-wrap gap-2">
                 {project.skills.map((item) => (
                   <li
                     key={`${project.title}-${item}`}
-                    className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700"
+                    className="rounded-full border border-stone-200 bg-[#f6f0e8] px-3 py-1 text-xs font-medium text-slate-700"
                   >
                     {item}
                   </li>
                 ))}
               </ul>
-              <div className="mt-5 flex flex-wrap gap-2">
+              <div className="mt-6 flex flex-wrap gap-3">
                 {project.repoUrl ? (
                   <a
                     href={project.repoUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex rounded-md border border-slate-300 px-4 py-2 text-xs font-medium text-slate-800 transition hover:border-slate-500"
+                    className="inline-flex rounded-full border border-stone-300 bg-white px-4 py-2 text-xs font-medium text-slate-800 transition hover:border-stone-500"
                   >
                     View on GitHub
                   </a>
@@ -110,7 +121,7 @@ function Projects() {
                     href={project.reportUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex rounded-md border border-slate-300 px-4 py-2 text-xs font-medium text-slate-800 transition hover:border-slate-500"
+                    className="inline-flex rounded-full bg-slate-950 px-4 py-2 text-xs font-medium text-white transition hover:bg-slate-800"
                   >
                     View Report
                   </a>
@@ -118,7 +129,7 @@ function Projects() {
                 {project.downloadUrl ? (
                   <a
                     href={project.downloadUrl}
-                    className="inline-flex rounded-md border border-slate-300 px-4 py-2 text-xs font-medium text-slate-800 transition hover:border-slate-500"
+                    className="inline-flex rounded-full border border-stone-300 bg-white px-4 py-2 text-xs font-medium text-slate-800 transition hover:border-stone-500"
                   >
                     {project.downloadLabel}
                   </a>

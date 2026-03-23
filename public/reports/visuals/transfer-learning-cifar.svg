@@ -2,35 +2,38 @@
   <rect width="1200" height="700" fill="#f8fafc"/>
   <rect x="50" y="50" width="1100" height="600" rx="28" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
   <text x="90" y="120" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#0f172a">Transfer Learning on CIFAR</text>
-  <text x="90" y="160" font-family="Arial, sans-serif" font-size="22" fill="#475569">AISE3010 Assignment 2 workflow distilled from the experiment notebook</text>
+  <text x="90" y="160" font-family="Arial, sans-serif" font-size="20" fill="#475569">AISE3010 Assignment 2 workflow distilled from the experiment notebook</text>
 
-  <rect x="90" y="215" width="220" height="120" rx="18" fill="#e2e8f0"/>
+  <rect x="90" y="215" width="235" height="130" rx="18" fill="#e2e8f0"/>
   <text x="120" y="260" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Part A</text>
   <text x="120" y="298" font-family="Arial, sans-serif" font-size="22" fill="#334155">Scratch CNN</text>
   <text x="120" y="326" font-family="Arial, sans-serif" font-size="18" fill="#475569">5+ conv layers on CIFAR10</text>
 
-  <rect x="350" y="215" width="220" height="120" rx="18" fill="#dbeafe"/>
+  <rect x="350" y="215" width="235" height="130" rx="18" fill="#dbeafe"/>
   <text x="380" y="260" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Part B</text>
-  <text x="380" y="298" font-family="Arial, sans-serif" font-size="22" fill="#334155">ImageNet → CIFAR10</text>
-  <text x="380" y="326" font-family="Arial, sans-serif" font-size="18" fill="#475569">head tuning + progressive unfreeze</text>
+  <text x="380" y="296" font-family="Arial, sans-serif" font-size="20" fill="#334155">ImageNet -&gt; CIFAR10</text>
+  <text x="380" y="322" font-family="Arial, sans-serif" font-size="16" fill="#475569">head tuning +</text>
+  <text x="380" y="344" font-family="Arial, sans-serif" font-size="16" fill="#475569">progressive unfreeze</text>
 
-  <rect x="610" y="215" width="220" height="120" rx="18" fill="#dcfce7"/>
+  <rect x="610" y="215" width="235" height="130" rx="18" fill="#dcfce7"/>
   <text x="640" y="260" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Part C</text>
-  <text x="640" y="298" font-family="Arial, sans-serif" font-size="22" fill="#334155">Places365 → CIFAR10</text>
-  <text x="640" y="326" font-family="Arial, sans-serif" font-size="18" fill="#475569">transfer vs. from-scratch baseline</text>
+  <text x="640" y="296" font-family="Arial, sans-serif" font-size="20" fill="#334155">Places365 -&gt; CIFAR10</text>
+  <text x="640" y="322" font-family="Arial, sans-serif" font-size="16" fill="#475569">transfer vs.</text>
+  <text x="640" y="344" font-family="Arial, sans-serif" font-size="16" fill="#475569">from-scratch baseline</text>
 
-  <rect x="870" y="215" width="220" height="120" rx="18" fill="#fae8ff"/>
+  <rect x="870" y="215" width="235" height="130" rx="18" fill="#fae8ff"/>
   <text x="900" y="260" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Part D</text>
-  <text x="900" y="298" font-family="Arial, sans-serif" font-size="22" fill="#334155">Multi-stage transfer</text>
-  <text x="900" y="326" font-family="Arial, sans-serif" font-size="18" fill="#475569">ImageNet → CIFAR100 → CIFAR10</text>
+  <text x="900" y="296" font-family="Arial, sans-serif" font-size="20" fill="#334155">Multi-stage transfer</text>
+  <text x="900" y="322" font-family="Arial, sans-serif" font-size="16" fill="#475569">ImageNet -&gt; CIFAR100</text>
+  <text x="900" y="344" font-family="Arial, sans-serif" font-size="16" fill="#475569">-&gt; CIFAR10</text>
 
-  <line x1="310" y1="275" x2="350" y2="275" stroke="#64748b" stroke-width="4"/>
-  <line x1="570" y1="275" x2="610" y2="275" stroke="#64748b" stroke-width="4"/>
-  <line x1="830" y1="275" x2="870" y2="275" stroke="#64748b" stroke-width="4"/>
+  <line x1="325" y1="280" x2="350" y2="280" stroke="#64748b" stroke-width="4"/>
+  <line x1="585" y1="280" x2="610" y2="280" stroke="#64748b" stroke-width="4"/>
+  <line x1="845" y1="280" x2="870" y2="280" stroke="#64748b" stroke-width="4"/>
 
   <rect x="90" y="410" width="1000" height="170" rx="20" fill="#0f172a"/>
   <text x="130" y="468" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Notebook reporting targets</text>
-  <text x="130" y="515" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1">• deterministic seeds and repeated runs</text>
-  <text x="130" y="553" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1">• Top-1 accuracy, macro-F1, learning curves, confusion matrices</text>
-  <text x="130" y="591" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1">• controlled comparison across pretraining paths and fine-tuning strategies</text>
+  <text x="130" y="515" font-family="Arial, sans-serif" font-size="22" fill="#cbd5e1">- deterministic seeds and repeated runs</text>
+  <text x="130" y="553" font-family="Arial, sans-serif" font-size="22" fill="#cbd5e1">- Top-1 accuracy, macro-F1, learning curves, confusion matrices</text>
+  <text x="130" y="591" font-family="Arial, sans-serif" font-size="22" fill="#cbd5e1">- controlled comparison across pretraining paths and fine-tuning strategies</text>
 </svg>

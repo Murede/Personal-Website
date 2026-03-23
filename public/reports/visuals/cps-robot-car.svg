@@ -2,11 +2,12 @@
   <rect width="1200" height="700" fill="#f8fafc"/>
   <rect x="50" y="50" width="1100" height="600" rx="28" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
   <text x="90" y="120" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#0f172a">Cyber-Physical Robot Car Control</text>
-  <text x="90" y="160" font-family="Arial, sans-serif" font-size="22" fill="#475569">Visual summary derived from the control loop and hardware modules in AISE3350_Lab3.py</text>
+  <text x="90" y="160" font-family="Arial, sans-serif" font-size="20" fill="#475569">Visual summary derived from the control loop and hardware modules in AISE3350_Lab3.py</text>
 
-  <rect x="110" y="235" width="250" height="130" rx="18" fill="#dbeafe"/>
+  <rect x="110" y="235" width="250" height="140" rx="18" fill="#dbeafe"/>
   <text x="145" y="285" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Infrared Sensors</text>
-  <text x="145" y="325" font-family="Arial, sans-serif" font-size="22" fill="#334155">left / middle / right line state</text>
+  <text x="145" y="322" font-family="Arial, sans-serif" font-size="19" fill="#334155">left / middle / right</text>
+  <text x="145" y="348" font-family="Arial, sans-serif" font-size="19" fill="#334155">line state</text>
 
   <rect x="475" y="215" width="250" height="170" rx="18" fill="#dcfce7"/>
   <text x="510" y="270" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Decision Logic</text>
@@ -14,14 +15,16 @@
   <text x="510" y="338" font-family="Arial, sans-serif" font-size="22" fill="#334155">drift left / drift right</text>
   <text x="510" y="368" font-family="Arial, sans-serif" font-size="22" fill="#334155">junction / lost line</text>
 
-  <rect x="840" y="235" width="250" height="130" rx="18" fill="#fae8ff"/>
+  <rect x="840" y="235" width="250" height="140" rx="18" fill="#fae8ff"/>
   <text x="875" y="285" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Motor Output</text>
-  <text x="875" y="325" font-family="Arial, sans-serif" font-size="22" fill="#334155">set_motor_model(LF, LR, RF, RR)</text>
+  <text x="875" y="322" font-family="Arial, sans-serif" font-size="18" fill="#334155">set_motor_model</text>
+  <text x="875" y="348" font-family="Arial, sans-serif" font-size="18" fill="#334155">(LF, LR, RF, RR)</text>
 
   <line x1="360" y1="300" x2="475" y2="300" stroke="#64748b" stroke-width="5"/>
   <line x1="725" y1="300" x2="840" y2="300" stroke="#64748b" stroke-width="5"/>
 
-  <rect x="260" y="470" width="680" height="110" rx="18" fill="#0f172a"/>
-  <text x="300" y="515" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Obstacle branch from ultrasonic sensor</text>
-  <text x="300" y="553" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1">distance &lt; 30 cm → stop → LED red → buzzer pulse → reverse → right turn recovery</text>
+  <rect x="210" y="450" width="780" height="150" rx="18" fill="#0f172a"/>
+  <text x="250" y="510" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Obstacle branch from ultrasonic sensor</text>
+  <text x="250" y="552" font-family="Arial, sans-serif" font-size="20" fill="#cbd5e1">distance &lt; 30 cm -&gt; stop -&gt; LED red -&gt; buzzer pulse</text>
+  <text x="250" y="580" font-family="Arial, sans-serif" font-size="20" fill="#cbd5e1">-&gt; reverse -&gt; right-turn recovery</text>
 </svg>
