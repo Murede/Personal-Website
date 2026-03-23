@@ -9,7 +9,7 @@ const navLinks = [
 function Navbar() {
   return (
     <header className="sticky top-4 z-50 px-4">
-      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between rounded-full border border-stone-300/70 bg-[#fffaf3]/90 px-6 py-3 shadow-[0_12px_40px_rgba(15,23,42,0.08)] backdrop-blur">
+      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between rounded-full border border-stone-300/60 bg-[#fffaf3]/80 px-6 py-3 shadow-[0_10px_28px_rgba(15,23,42,0.06)] backdrop-blur">
         <a href="#home" className="text-sm font-semibold tracking-[0.16em] text-slate-900 uppercase">
           Murede Adetiba
         </a>

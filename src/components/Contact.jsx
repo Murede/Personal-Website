@@ -1,7 +1,8 @@
 function Contact() {
   return (
     <section id="contact" className="px-4 py-8">
-      <div className="mx-auto w-full max-w-6xl rounded-[2rem] bg-slate-950 px-6 py-16 text-stone-100 shadow-[0_24px_80px_rgba(15,23,42,0.18)] md:px-10 md:py-20">
+      <div className="mx-auto w-full max-w-6xl border-t border-stone-300/70 px-2 py-16 md:px-4 md:py-20">
+        <div className="rounded-[1.75rem] bg-slate-950/94 px-6 py-16 text-stone-100 shadow-[0_20px_60px_rgba(15,23,42,0.16)] md:px-10 md:py-20">
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-400">Contact</p>
         <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">Let&apos;s build something useful.</h2>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-stone-300 sm:text-base">
@@ -30,6 +31,7 @@ function Contact() {
             <span className="block text-xs uppercase tracking-[0.2em] text-stone-400">Code</span>
             <span className="mt-3 block text-base">GitHub</span>
           </a>
+        </div>
         </div>
       </div>
     </section>

@@ -16,7 +16,7 @@ const interests = [
 function Interests() {
   return (
     <section id="interests" className="px-4 py-8">
-      <div className="mx-auto w-full max-w-6xl rounded-[2rem] border border-stone-300/70 bg-white/80 px-6 py-16 shadow-[0_18px_60px_rgba(15,23,42,0.05)] md:px-10 md:py-20">
+      <div className="mx-auto w-full max-w-6xl border-b border-stone-300/70 px-2 py-16 md:px-4 md:py-20">
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-500">Interests</p>
         <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
           Interests
@@ -30,7 +30,7 @@ function Interests() {
           {interests.map((item) => (
             <article
               key={item.title}
-              className="rounded-[1.5rem] border border-stone-200 bg-[#fffaf3] p-6"
+              className="rounded-[1.35rem] border border-stone-200/90 bg-white/60 p-6"
             >
               <h3 className="text-xl font-semibold text-slate-950">
                 {item.title}

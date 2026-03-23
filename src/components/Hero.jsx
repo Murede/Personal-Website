@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <section id="home" className="px-4 pt-8">
-      <div className="mx-auto grid w-full max-w-6xl gap-8 rounded-[2rem] border border-stone-300/70 bg-[#fffaf3]/90 px-6 py-14 shadow-[0_24px_80px_rgba(15,23,42,0.08)] md:grid-cols-[1.2fr_0.8fr] md:px-10 md:py-18">
+      <div className="mx-auto grid w-full max-w-6xl gap-10 border-b border-stone-300/70 px-2 py-14 md:grid-cols-[1.2fr_0.8fr] md:px-4 md:py-18">
         <div className="space-y-7">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-500">
             Electrical Engineering • AI Systems • Embedded Work
@@ -34,19 +34,19 @@ function Hero() {
           </div>
 
           <div className="grid gap-4 pt-4 sm:grid-cols-3">
-            <div className="rounded-2xl border border-stone-200 bg-white/70 p-4">
+            <div className="rounded-2xl border border-stone-200/80 bg-white/55 p-4">
               <p className="text-xs uppercase tracking-[0.2em] text-stone-500">Focus</p>
               <p className="mt-3 text-sm leading-relaxed text-slate-700">
                 Embedded systems, ML workflows, and hardware-software integration.
               </p>
             </div>
-            <div className="rounded-2xl border border-stone-200 bg-white/70 p-4">
+            <div className="rounded-2xl border border-stone-200/80 bg-white/55 p-4">
               <p className="text-xs uppercase tracking-[0.2em] text-stone-500">Approach</p>
               <p className="mt-3 text-sm leading-relaxed text-slate-700">
                 Measurable outcomes, reliable implementation, and strong engineering fundamentals.
               </p>
             </div>
-            <div className="rounded-2xl border border-stone-200 bg-white/70 p-4">
+            <div className="rounded-2xl border border-stone-200/80 bg-white/55 p-4">
               <p className="text-xs uppercase tracking-[0.2em] text-stone-500">Current</p>
               <p className="mt-3 text-sm leading-relaxed text-slate-700">
                 Prototyping sensor-driven systems and refining project presentation for internships.
@@ -55,7 +55,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between rounded-[1.75rem] bg-slate-950 p-7 text-stone-100">
+        <div className="flex flex-col justify-between rounded-[1.75rem] border border-slate-800/20 bg-slate-950/92 p-7 text-stone-100 shadow-[0_18px_50px_rgba(15,23,42,0.12)]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-400">
               Snapshot

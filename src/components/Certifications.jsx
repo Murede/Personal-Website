@@ -28,7 +28,7 @@ const certifications = [
 function Certifications() {
   return (
     <section id="certifications" className="scroll-mt-24 px-4 py-8">
-      <div className="mx-auto w-full max-w-6xl rounded-[2rem] border border-stone-300/70 bg-[#fbf8f2]/90 px-6 py-16 shadow-[0_18px_60px_rgba(15,23,42,0.05)] md:px-10 md:py-20">
+      <div className="mx-auto w-full max-w-6xl border-b border-stone-300/70 px-2 py-16 md:px-4 md:py-20">
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-500">Credentials</p>
         <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
           Certifications
@@ -38,7 +38,7 @@ function Certifications() {
         </p>
         <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {certifications.map((item) => (
-            <article key={item.title} className="rounded-[1.5rem] border border-stone-200 bg-white/90 p-6">
+            <article key={item.title} className="rounded-[1.35rem] border border-stone-200/90 bg-white/65 p-6">
               <a href={item.link || item.imagePath} target="_blank" rel="noreferrer">
                 <img
                   src={item.imagePath}

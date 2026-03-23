@@ -49,7 +49,7 @@ const leadershipItems = [
 function Work() {
   return (
     <section id="work" className="px-4 py-8">
-      <div className="mx-auto w-full max-w-6xl rounded-[2rem] border border-stone-300/70 bg-[#f8f4ed]/90 px-6 py-16 shadow-[0_18px_60px_rgba(15,23,42,0.05)] md:px-10 md:py-20">
+      <div className="mx-auto w-full max-w-6xl border-b border-stone-300/70 px-2 py-16 md:px-4 md:py-20">
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-500">Experience</p>
         <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">Work and leadership</h2>
         <p className="mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
@@ -59,7 +59,7 @@ function Work() {
           {workItems.map((item) => (
             <article
               key={`${item.company}-${item.role}`}
-              className="rounded-[1.5rem] border border-stone-200 bg-white/90 p-6"
+              className="rounded-[1.35rem] border border-stone-200/90 bg-white/65 p-6"
             >
               <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                 <div>
@@ -85,7 +85,7 @@ function Work() {
           {leadershipItems.map((item) => (
             <article
               key={`${item.organization}-${item.role}`}
-              className="rounded-[1.5rem] border border-stone-200 bg-white/90 p-6"
+              className="rounded-[1.35rem] border border-stone-200/90 bg-white/65 p-6"
             >
               <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                 <div>

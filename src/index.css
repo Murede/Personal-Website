@@ -8,9 +8,9 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at top left, rgba(176, 137, 104, 0.16), transparent 26%),
-    radial-gradient(circle at top right, rgba(91, 141, 156, 0.12), transparent 24%),
-    linear-gradient(180deg, #f7f1e8 0%, #f4efe7 32%, #f8f6f2 100%);
+    radial-gradient(circle at top left, rgba(176, 137, 104, 0.12), transparent 24%),
+    radial-gradient(circle at top right, rgba(91, 141, 156, 0.1), transparent 20%),
+    linear-gradient(180deg, #f7f1e8 0%, #f6f1ea 40%, #f7f4ef 100%);
   color: #16202a;
   font-family: "Aptos", "Segoe UI", sans-serif;
 }
@@ -20,11 +20,11 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  opacity: 0.25;
+  opacity: 0.18;
   background-image:
     linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
-  background-size: 28px 28px;
+  background-size: 34px 34px;
 }
 
 h1,
