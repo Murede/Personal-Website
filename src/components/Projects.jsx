@@ -123,7 +123,7 @@ function Projects() {
                     rel="noreferrer"
                     className="inline-flex rounded-full bg-slate-950 px-4 py-2 text-xs font-medium text-white transition hover:bg-slate-800"
                   >
-                    View Report
+                    Article
                   </a>
                 ) : null}
                 {project.downloadUrl ? (

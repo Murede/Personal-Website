@@ -3,40 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BART Summarization Pipeline Report</title>
+    <title>BART Summarization Pipeline Article</title>
     <style>
-      body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; color: #0f172a; }
-      main { max-width: 900px; margin: 0 auto; padding: 48px 24px 64px; }
-      h1 { font-size: 2.25rem; margin-bottom: 0.5rem; }
-      h2 { margin-top: 2rem; font-size: 1.25rem; }
-      p, li { font-size: 1rem; line-height: 1.7; color: #334155; }
-      .hero { background: #fff; border: 1px solid #cbd5e1; border-radius: 20px; padding: 24px; }
-      img { width: 100%; border-radius: 16px; border: 1px solid #cbd5e1; margin-top: 1rem; }
-      .meta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1rem; }
-      .chip { background: #e2e8f0; color: #0f172a; padding: 8px 12px; border-radius: 999px; font-size: 0.875rem; }
-      a { color: #0f172a; }
+      :root {
+        --bg: #f7f2ea; --panel: rgba(255, 250, 243, 0.88); --card: rgba(255,255,255,0.76);
+        --border: #d7cec1; --text: #17212b; --muted: #51606f; --accent: #0f172a; --chip: #efe5d8;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; color: var(--text); font-family: Arial, sans-serif; background: radial-gradient(circle at top left, rgba(176,137,104,.14), transparent 24%), linear-gradient(180deg, #f7f2ea 0%, #f7f4ef 100%); }
+      main { max-width: 980px; margin: 0 auto; padding: 48px 24px 72px; }
+      .hero { background: var(--panel); border: 1px solid var(--border); border-radius: 28px; padding: 28px; box-shadow: 0 18px 40px rgba(15,23,42,.05); }
+      .eyebrow { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: #7b6752; }
+      h1 { margin: 14px 0 8px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.5rem, 5vw, 4rem); line-height: .95; }
+      h2 { margin: 0 0 10px; font-family: Georgia, "Times New Roman", serif; font-size: 1.45rem; }
+      p { margin: 0; font-size: 1rem; line-height: 1.75; color: var(--muted); }
+      .meta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+      .chip { border-radius: 999px; background: var(--chip); padding: 9px 13px; font-size: .82rem; font-weight: 700; color: var(--text); }
+      figure { margin: 22px 0 0; background: var(--card); border: 1px solid var(--border); border-radius: 22px; padding: 16px; }
+      img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid #d9e0e6; background: #fff; }
+      figcaption { margin-top: 12px; font-size: .92rem; line-height: 1.6; color: #5d6a77; }
+      .grid { display: grid; gap: 18px; margin-top: 26px; }
+      .section { border: 1px solid var(--border); border-radius: 22px; background: var(--card); padding: 22px; }
+      .cta { display: inline-flex; margin-top: 16px; border-radius: 999px; background: var(--accent); color: white; padding: 12px 18px; font-size: .92rem; font-weight: 700; text-decoration: none; }
+      @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
     </style>
   </head>
   <body>
     <main>
       <section class="hero">
+        <p class="eyebrow">Project Article</p>
         <h1>BART Summarization Pipeline</h1>
-        <p>This report covers the encoder-decoder NLP workflow implemented in the Assignment 3 notebook using the XSum dataset and the <code>facebook/bart-base</code> checkpoint.</p>
+        <p>This article covers an encoder-decoder NLP workflow built around XSum and <code>facebook/bart-base</code>, with an explicit comparison between original pretrained weights and a domain-adapted checkpoint.</p>
         <div class="meta">
           <span class="chip">Transformers</span>
           <span class="chip">BART</span>
           <span class="chip">XSum</span>
           <span class="chip">ROUGE</span>
         </div>
-        <img src="/reports/visuals/bart-summarization.svg" alt="BART summarization workflow diagram" />
+        <figure>
+          <img src="/reports/visuals/bart-summarization.svg" alt="BART summarization workflow diagram" />
+          <figcaption>
+            The article figure maps directly to the notebook pipeline: load XSum and BART, continue denoising pretraining, then fine-tune and compare two summarization models under the same supervised setup.
+          </figcaption>
+        </figure>
       </section>
-      <h2>What the project is about</h2>
-      <p>The notebook studies whether continuing self-supervised denoising training on article text improves downstream summarization quality. It compares a domain-adapted checkpoint against the original pretrained model while keeping the supervised fine-tuning stage aligned across both runs.</p>
-      <h2>How it was created</h2>
-      <p>The project follows a three-stage sequence: load XSum and BART, continue masked denoising pretraining on article text, then fine-tune two models on summarization and evaluate them with ROUGE plus generated examples. The report image is derived from those notebook stages and reflects the exact progression used in the implementation.</p>
-      <h2>Project artifact</h2>
-      <p>The attached visual highlights the pipeline and the comparison between Model A, which starts from the Stage 2 checkpoint, and Model B, which starts from the original BART weights. The notebook download contains the training code, evaluation cells, and written analysis blocks.</p>
-      <p><a href="/reports/bart-summarization-project.zip">Download project notebook</a></p>
+
+      <div class="grid">
+        <section class="section">
+          <h2>What the project does</h2>
+          <p>The notebook asks whether a lightweight domain-adaptation step helps BART summarize BBC-style news text more effectively. The goal is not just to fine-tune a model, but to measure whether the extra self-supervised stage adds practical value.</p>
+        </section>
+        <section class="section">
+          <h2>How it was built</h2>
+          <p>The implementation follows three steps: load the XSum subset and checkpoint, continue masked denoising on article text only, then fine-tune two models and compare them using ROUGE and generated examples. That staged setup gives the final comparison a clear experimental basis.</p>
+        </section>
+        <section class="section">
+          <h2>Why the image is here</h2>
+          <p>The article visual is a compact rendering of the real model path used in the notebook. It is included so the article can explain the workflow quickly without forcing the reader to decode notebook cells first.</p>
+        </section>
+        <section class="section">
+          <h2>Artifact access</h2>
+          <p>The project archive includes the notebook that contains the training pipeline, evaluation cells, and the written analysis used to compare Model A and Model B.</p>
+          <a class="cta" href="/reports/bart-summarization-project.zip">Download Notebook</a>
+        </section>
+      </div>
     </main>
   </body>
 </html>
