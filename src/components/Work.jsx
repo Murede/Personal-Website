@@ -5,7 +5,7 @@ const workItems = [
     location: 'Kitchener, Ontario',
     period: 'May 2024 - Aug. 2024',
     points: [
-      'Developed tenant scoring algorithms and automation tools using Python, SQL, and data analytics to improve rental application processing and operational efficiency.',
+      'Developed tenant scoring algorithms and automation tools using Python, SQL, and data analysis to improve rental application processing.',
     ],
   },
   {
@@ -14,7 +14,7 @@ const workItems = [
     location: 'Toronto, Ontario',
     period: 'Sep 2024 - Present',
     points: [
-      'Tutored IB Math, Chemistry, and Physics while tracking student performance and learning progress using structured records and analysis in MS Office.',
+      'Tutored IB Math, Chemistry, and Physics while tracking student progress using structured notes and records.',
     ],
   },
 ]
@@ -25,7 +25,7 @@ const leadershipItems = [
     role: 'Data-Driven Personal Assistant System',
     period: 'Mar. 2025 - Present',
     points: [
-      'Built data and NLP pipelines using Python and machine learning tools to analyze scheduling patterns, weather data, and user preferences for improved assistant decision-making.',
+      'Built data and NLP pipelines in Python to analyze scheduling patterns, weather data, and user preferences.',
     ],
   },
   {
@@ -33,7 +33,7 @@ const leadershipItems = [
     role: 'Electrical Team Contributor',
     period: 'Sept. 2024 - Present',
     points: [
-      'Designed and validated rover electrical subsystems including PCB layouts, sensors, and motor controllers while collaborating with software and mechanical teams.',
+      'Worked on rover electrical subsystems, including PCB layouts, sensors, and motor controllers, with software and mechanical teammates.',
     ],
   },
   {
@@ -41,7 +41,7 @@ const leadershipItems = [
     role: 'Technical Mentor',
     period: 'Jan. 2023 - Present',
     points: [
-      'Mentored students in robotics engineering by teaching circuit design, microcontroller programming in C++, and control systems for competitive robotics projects.',
+      'Mentored students in circuit design, microcontroller programming in C++, and control systems for robotics projects.',
     ],
   },
 ]
@@ -53,7 +53,7 @@ function Work() {
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-500">Experience</p>
         <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">Work and leadership</h2>
         <p className="mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
-          Experience spanning software engineering, analytics, and technical instruction.
+          Work in software, tutoring, mentoring, and student engineering teams.
         </p>
         <div className="mt-8 space-y-5">
           {workItems.map((item) => (

@@ -62,6 +62,9 @@ function Skills() {
       <div className="mx-auto w-full max-w-6xl border-b border-stone-300/70 px-2 py-16 md:px-4 md:py-20">
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-500">Capabilities</p>
         <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">Skills</h2>
+        <p className="mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
+          Tools, languages, and technical areas I use across projects and coursework.
+        </p>
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {skillGroups.map((group) => (
             <article

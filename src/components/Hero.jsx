@@ -9,12 +9,11 @@ function Hero() {
 
           <div className="space-y-3">
             <h1 className="max-w-3xl text-5xl font-semibold leading-[0.94] text-slate-950 sm:text-6xl md:text-7xl">
-              Building grounded engineering systems with AI, hardware, and software.
+              Electrical and AI Systems Engineering student.
             </h1>
             <p className="max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
-              I&apos;m Murede Adetiba, an Electrical and AI Systems Engineering student focused on
-              practical prototypes, clean implementation, and technical work that holds up under
-              real constraints.
+              I&apos;m Murede Adetiba. I build projects in embedded systems, machine learning, and
+              circuit-based design, and I use this site to show the work clearly.
             </p>
           </div>
 
@@ -37,19 +36,19 @@ function Hero() {
             <div className="rounded-2xl border border-stone-200/80 bg-white/55 p-4">
               <p className="text-xs uppercase tracking-[0.2em] text-stone-500">Focus</p>
               <p className="mt-3 text-sm leading-relaxed text-slate-700">
-                Embedded systems, ML workflows, and hardware-software integration.
+                Embedded systems, machine learning, and hardware-software integration.
               </p>
             </div>
             <div className="rounded-2xl border border-stone-200/80 bg-white/55 p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-stone-500">Approach</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-stone-500">Work Style</p>
               <p className="mt-3 text-sm leading-relaxed text-slate-700">
-                Measurable outcomes, reliable implementation, and strong engineering fundamentals.
+                I prefer practical projects, direct explanations, and solid technical work.
               </p>
             </div>
             <div className="rounded-2xl border border-stone-200/80 bg-white/55 p-4">
               <p className="text-xs uppercase tracking-[0.2em] text-stone-500">Current</p>
               <p className="mt-3 text-sm leading-relaxed text-slate-700">
-                Prototyping sensor-driven systems and refining project presentation for internships.
+                Building up project writeups and preparing for internship applications.
               </p>
             </div>
           </div>
@@ -68,15 +67,13 @@ function Hero() {
               <div className="border-b border-white/10 pb-5">
                 <p className="text-sm uppercase tracking-[0.22em] text-stone-400">Strengths</p>
                 <p className="mt-2 text-base leading-relaxed text-stone-200">
-                  Circuit simulation, Python workflows, machine learning experiments, and applied
-                  engineering communication.
+                  Circuit simulation, Python, machine learning experiments, and technical writing.
                 </p>
               </div>
               <div>
-                <p className="text-sm uppercase tracking-[0.22em] text-stone-400">Direction</p>
+                <p className="text-sm uppercase tracking-[0.22em] text-stone-400">Goal</p>
                 <p className="mt-2 text-base leading-relaxed text-stone-200">
-                  Building a portfolio that feels technical, thoughtful, and hireable without
-                  looking overly flashy.
+                  Show my projects in a way that is clear, useful, and easy to review.
                 </p>
               </div>
             </div>

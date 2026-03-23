@@ -1,15 +1,15 @@
 const interests = [
   {
-    title: "Embedded Systems",
-    description: "I enjoy building hardware-software systems that connect sensing, control, and real-world problem solving.",
+    title: 'Embedded Systems',
+    description: 'I like building hardware-software systems that combine sensing, control, and real-world use.',
   },
   {
-    title: "STEM Outreach",
-    description: "I care about mentoring students and creating more accessible pathways into engineering and technology.",
+    title: 'STEM Outreach',
+    description: 'I care about mentoring students and making engineering feel more accessible.',
   },
   {
-    title: "Robotics",
-    description: "I am interested in robotics as a space where electrical design, control systems, and teamwork come together.",
+    title: 'Robotics',
+    description: 'I am interested in robotics because it brings together electrical design, control systems, and teamwork.',
   },
 ]
 
@@ -23,7 +23,7 @@ function Interests() {
         </h2>
 
         <p className="mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
-          Areas that continue to shape the kind of engineer I want to become.
+          Areas I keep coming back to outside of classes and formal project work.
         </p>
 
         <div className="mt-8 grid gap-5 md:grid-cols-3">

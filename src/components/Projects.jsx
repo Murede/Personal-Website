@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'Transfer Learning on CIFAR',
     description:
-      'Implemented a reproducible deep learning study comparing from-scratch CNN training, ImageNet transfer learning, Places365 transfer, and multi-stage CIFAR100 to CIFAR10 adaptation with confusion matrices and macro-F1 evaluation.',
+      'Deep learning study comparing a scratch CNN, ImageNet transfer learning, Places365 transfer, and a multi-stage CIFAR100 to CIFAR10 path.',
     skills: ['PyTorch', 'Transfer Learning', 'ResNet50', 'Experiment Design'],
     repoUrl: null,
     reportUrl: '/reports/transfer-learning-cifar-report.html',
@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'BART Summarization Pipeline',
     description:
-      'Built an NLP workflow around XSum and BART that continues self-supervised denoising pretraining before supervised summarization fine-tuning, then compares both checkpoints with ROUGE and generated outputs.',
+      'Summarization project using XSum and BART, with a comparison between the original checkpoint and a checkpoint adapted through additional denoising training.',
     skills: ['Transformers', 'NLP', 'BART', 'ROUGE Evaluation'],
     repoUrl: null,
     reportUrl: '/reports/bart-summarization-report.html',
@@ -22,7 +22,7 @@ const projects = [
   {
     title: 'Cyber-Physical Robot Car Control',
     description:
-      'Developed a Python control program for a robot car integrating infrared line following, ultrasonic obstacle detection, motor commands, LEDs, servo control, and buzzer feedback in an object-oriented hardware loop.',
+      'Python control program for a robot car with line following, obstacle detection, motor control, LED feedback, and buzzer output.',
     skills: ['Python', 'Embedded Control', 'Sensors', 'Cyber-Physical Systems'],
     repoUrl: null,
     reportUrl: '/reports/cps-robot-car-report.html',
@@ -32,7 +32,7 @@ const projects = [
   {
     title: 'Function Generator Circuit Simulation',
     description:
-      'Created analog circuit simulation files for a function generator design in Micro-Cap, showing component-level circuit reasoning and practical electrical engineering design workflow.',
+      'Micro-Cap simulation files for a function generator design built from analog components and waveform models.',
     skills: ['Circuit Simulation', 'Analog Design', 'Micro-Cap', 'ECE'],
     repoUrl: null,
     reportUrl: '/reports/function-generator-circuit-report.html',
@@ -42,7 +42,7 @@ const projects = [
   {
     title: 'TTOMPH',
     description:
-      'Designed a low-cost, real-time microplastics detection prototype for aquaculture using a 505 nm laser, a photodiode at 90 degrees for light-scatter sensing, and ESP32 Wi-Fi data transmission in a continuous-flow water system.',
+      'Microplastics detection prototype for aquaculture using laser scatter sensing, a photodiode, and ESP32-based data transfer.',
     skills: ['Systems Integration', 'Embedded Mindset', 'Signal/Data Handling', 'Technical Documentation'],
     repoUrl: 'https://github.com/',
     reportUrl: '/reports/ttomph-report.pdf',
@@ -52,7 +52,7 @@ const projects = [
   {
     title: 'Food Vision Model',
     description:
-      'Designed and trained a computer vision pipeline for food classification, including dataset preparation, model training, and evaluation for real-world ML performance.',
+      'Computer vision model for food classification, including dataset preparation, training, and evaluation.',
     skills: ['Python', 'PyTorch', 'Computer Vision', 'Model Validation'],
     repoUrl: 'https://github.com/',
     reportUrl: null,
@@ -62,7 +62,7 @@ const projects = [
   {
     title: 'Resistor Predictor CNN',
     description:
-      'Developed a CNN model to predict resistor-related outputs from structured inputs, combining core electrical engineering domain understanding with machine learning optimization.',
+      'CNN-based project focused on predicting resistor-related outputs from structured inputs.',
     skills: ['CNN Architecture', 'Feature Engineering', 'Electrical Domain Modeling', 'Performance Tuning'],
     repoUrl: 'https://github.com/',
     reportUrl: null,
@@ -76,11 +76,9 @@ function Projects() {
     <section id="projects" className="px-4 py-8">
       <div className="mx-auto w-full max-w-6xl border-b border-stone-300/70 px-2 py-16 md:px-4 md:py-20">
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-500">Selected Work</p>
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
-          Projects framed with more context and stronger visual structure.
-        </h2>
+        <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">Projects</h2>
         <p className="mt-4 max-w-3xl text-sm text-slate-600 sm:text-base">
-          A selection of engineering work focused on robust implementation and measurable results.
+          A selection of projects in embedded systems, machine learning, and electrical engineering.
         </p>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {projects.map((project) => (
