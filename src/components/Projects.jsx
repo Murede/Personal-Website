@@ -1,13 +1,43 @@
 const projects = [
   {
-    title: 'Coursework Portfolio Pack',
+    title: 'Transfer Learning on CIFAR',
     description:
-      'Curated archive of selected classwork spanning transfer learning on CIFAR datasets, BART-based abstractive summarization, cyber-physical robot control, and circuit simulation work. This download bundles the source artifacts I use to show technical depth across AI, embedded systems, and electrical engineering.',
-    skills: ['Deep Learning', 'NLP', 'Embedded Systems', 'Circuit Simulation'],
+      'Implemented a reproducible deep learning study comparing from-scratch CNN training, ImageNet transfer learning, Places365 transfer, and multi-stage CIFAR100 to CIFAR10 adaptation with confusion matrices and macro-F1 evaluation.',
+    skills: ['PyTorch', 'Transfer Learning', 'ResNet50', 'Experiment Design'],
     repoUrl: null,
     reportUrl: null,
-    downloadUrl: '/reports/coursework-portfolio-pack.zip',
-    downloadLabel: 'Download Project Pack',
+    downloadUrl: '/reports/transfer-learning-cifar-project.zip',
+    downloadLabel: 'Download Notebook',
+  },
+  {
+    title: 'BART Summarization Pipeline',
+    description:
+      'Built an NLP workflow around XSum and BART that continues self-supervised denoising pretraining before supervised summarization fine-tuning, then compares both checkpoints with ROUGE and generated outputs.',
+    skills: ['Transformers', 'NLP', 'BART', 'ROUGE Evaluation'],
+    repoUrl: null,
+    reportUrl: null,
+    downloadUrl: '/reports/bart-summarization-project.zip',
+    downloadLabel: 'Download Notebook',
+  },
+  {
+    title: 'Cyber-Physical Robot Car Control',
+    description:
+      'Developed a Python control program for a robot car integrating infrared line following, ultrasonic obstacle detection, motor commands, LEDs, servo control, and buzzer feedback in an object-oriented hardware loop.',
+    skills: ['Python', 'Embedded Control', 'Sensors', 'Cyber-Physical Systems'],
+    repoUrl: null,
+    reportUrl: null,
+    downloadUrl: '/reports/cps-robot-car-project.zip',
+    downloadLabel: 'Download Source',
+  },
+  {
+    title: 'Function Generator Circuit Simulation',
+    description:
+      'Created analog circuit simulation files for a function generator design in Micro-Cap, showing component-level circuit reasoning and practical electrical engineering design workflow.',
+    skills: ['Circuit Simulation', 'Analog Design', 'Micro-Cap', 'ECE'],
+    repoUrl: null,
+    reportUrl: null,
+    downloadUrl: '/reports/function-generator-circuit-project.zip',
+    downloadLabel: 'Download Circuit Files',
   },
   {
     title: 'TTOMPH',
