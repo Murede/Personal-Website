@@ -3,70 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cyber-Physical Robot Car Control Article</title>
+    <title>Cyber-Physical Robot Car Control</title>
     <style>
-      :root {
-        --bg: #f7f2ea; --panel: rgba(255, 250, 243, 0.88); --card: rgba(255,255,255,0.76);
-        --border: #d7cec1; --text: #17212b; --muted: #51606f; --accent: #0f172a; --chip: #efe5d8;
-      }
-      * { box-sizing: border-box; }
-      body { margin: 0; color: var(--text); font-family: Arial, sans-serif; background: radial-gradient(circle at top left, rgba(176,137,104,.14), transparent 24%), linear-gradient(180deg, #f7f2ea 0%, #f7f4ef 100%); }
-      main { max-width: 980px; margin: 0 auto; padding: 48px 24px 72px; }
-      .hero { background: var(--panel); border: 1px solid var(--border); border-radius: 28px; padding: 28px; box-shadow: 0 18px 40px rgba(15,23,42,.05); }
-      .eyebrow { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: #7b6752; }
-      h1 { margin: 14px 0 8px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: .95; }
-      h2 { margin: 0 0 10px; font-family: Georgia, "Times New Roman", serif; font-size: 1.45rem; }
-      p { margin: 0; font-size: 1rem; line-height: 1.75; color: var(--muted); }
-      .meta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
-      .chip { border-radius: 999px; background: var(--chip); padding: 9px 13px; font-size: .82rem; font-weight: 700; color: var(--text); }
-      figure { margin: 22px 0 0; background: var(--card); border: 1px solid var(--border); border-radius: 22px; padding: 16px; }
-      img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid #d9e0e6; background: #fff; }
-      figcaption { margin-top: 12px; font-size: .92rem; line-height: 1.6; color: #5d6a77; }
-      .grid { display: grid; gap: 18px; margin-top: 26px; }
-      .section { border: 1px solid var(--border); border-radius: 22px; background: var(--card); padding: 22px; }
-      .cta { display: inline-flex; margin-top: 16px; border-radius: 999px; background: var(--accent); color: white; padding: 12px 18px; font-size: .92rem; font-weight: 700; text-decoration: none; }
-      @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
+      body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: #1b2430; background: #f7f4ef; }
+      main { max-width: 860px; margin: 0 auto; padding: 56px 24px 80px; }
+      h1 { margin: 0 0 14px; font-size: clamp(2.4rem, 6vw, 3.8rem); line-height: 0.95; }
+      h2 { margin: 36px 0 12px; font-size: 1.5rem; }
+      p { margin: 0 0 16px; font-family: Arial, sans-serif; font-size: 1rem; line-height: 1.8; color: #465466; }
+      .lead { font-size: 1.08rem; color: #374454; }
+      .figure { margin: 28px 0 10px; padding: 16px; background: rgba(255,255,255,0.72); border: 1px solid #d8d0c5; border-radius: 18px; }
+      img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #d9e0e6; background: #fff; }
+      figcaption { margin-top: 12px; font-family: Arial, sans-serif; font-size: 0.92rem; line-height: 1.6; color: #5c6978; }
+      .download { display: inline-block; margin-top: 18px; border-radius: 999px; background: #0f172a; color: #fff; padding: 12px 18px; font-family: Arial, sans-serif; font-size: 0.92rem; font-weight: 700; text-decoration: none; }
+      .kicker { margin-bottom: 12px; font-family: Arial, sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #7a6751; }
     </style>
   </head>
   <body>
     <main>
-      <section class="hero">
-        <p class="eyebrow">Project Article</p>
-        <h1>Cyber-Physical Robot Car Control</h1>
-        <p>This article summarizes a sensor-driven robot-car control program that combines perception, state logic, and actuator output inside a single Python control loop.</p>
-        <div class="meta">
-          <span class="chip">Python</span>
-          <span class="chip">Infrared Sensors</span>
-          <span class="chip">Ultrasonic Avoidance</span>
-          <span class="chip">Motor Control</span>
-        </div>
-        <figure>
-          <img src="/reports/visuals/cps-robot-car.svg" alt="Robot car control loop diagram" />
-          <figcaption>
-            Workflow view generated from the source file. It shows how line sensors feed into movement decisions and how the ultrasonic branch interrupts normal motion when an obstacle is detected.
-          </figcaption>
-        </figure>
-      </section>
+      <div class="kicker">Project Report</div>
+      <h1>Cyber-Physical Robot Car Control</h1>
+      <p class="lead">
+        This project combines sensing, logic, and actuation in a Python control program for a
+        small autonomous car.
+      </p>
 
-      <div class="grid">
-        <section class="section">
-          <h2>What the project does</h2>
-          <p>The program reads three infrared sensors to determine whether the car is centered on a line, drifting, at a junction, or off track. Based on that state, it issues motor commands for straight motion, turning, or recovery behavior.</p>
-        </section>
-        <section class="section">
-          <h2>How it was built</h2>
-          <p>The implementation is organized around a <code>Car</code> class that initializes servo, ultrasonic, motor, infrared, ADC, buzzer, and LED modules. The main behavior runs in <code>mode_infrared()</code>, where sensor reads, line-following logic, and obstacle responses are all coordinated.</p>
-        </section>
-        <section class="section">
-          <h2>Why the image is here</h2>
-          <p>The diagram is included as an engineering summary of the source code rather than a decorative graphic. It captures the decision flow implemented in the file and makes the project understandable even before the reader downloads the source archive.</p>
-        </section>
-        <section class="section">
-          <h2>Artifact access</h2>
-          <p>The archive linked below contains the Python source used for the control logic, including the line-following state handling and the obstacle-avoidance branch.</p>
-          <a class="cta" href="/reports/cps-robot-car-project.zip">Download Source</a>
-        </section>
-      </div>
+      <h2>Project Overview</h2>
+      <p>
+        The system reads infrared line-following sensors to determine vehicle position relative to
+        a path and then updates motor behavior accordingly. It also integrates ultrasonic obstacle
+        detection so the car can interrupt normal motion, stop, signal, reverse, and attempt a
+        local recovery maneuver when the path ahead is blocked.
+      </p>
+
+      <h2>How It Was Created</h2>
+      <p>
+        The implementation is centered on a <code>Car</code> class that manages the hardware
+        modules used in the lab setup, including the motor driver, infrared sensors, ultrasonic
+        sensor, servo, LEDs, buzzer, and ADC. The control logic in
+        <code>mode_infrared()</code> translates sensor states into directional decisions and then
+        into motor commands.
+      </p>
+
+      <figure class="figure">
+        <img src="/reports/visuals/cps-robot-car.svg" alt="Robot car control loop diagram" />
+        <figcaption>
+          Figure 1. Simplified engineering view of the program flow from sensor input to line state
+          classification, motor output, and obstacle-response behavior.
+        </figcaption>
+      </figure>
+
+      <h2>Artifact Summary</h2>
+      <p>
+        The visual is included as a report aid so the article communicates the control architecture
+        directly. It reflects the source file structure rather than introducing a separate diagram
+        unrelated to the code.
+      </p>
+
+      <a class="download" href="/reports/cps-robot-car-project.zip">Download Source</a>
     </main>
   </body>
 </html>

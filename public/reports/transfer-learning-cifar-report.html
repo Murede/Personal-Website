@@ -3,151 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transfer Learning on CIFAR Article</title>
+    <title>Transfer Learning on CIFAR</title>
     <style>
-      :root {
-        --bg: #f7f2ea;
-        --panel: rgba(255, 250, 243, 0.88);
-        --card: rgba(255, 255, 255, 0.76);
-        --border: #d7cec1;
-        --text: #17212b;
-        --muted: #51606f;
-        --accent: #0f172a;
-        --chip: #efe5d8;
-      }
-      * { box-sizing: border-box; }
       body {
         margin: 0;
-        color: var(--text);
-        font-family: Arial, sans-serif;
-        background:
-          radial-gradient(circle at top left, rgba(176, 137, 104, 0.14), transparent 24%),
-          linear-gradient(180deg, #f7f2ea 0%, #f7f4ef 100%);
+        font-family: Georgia, "Times New Roman", serif;
+        color: #1b2430;
+        background: #f7f4ef;
       }
-      main { max-width: 980px; margin: 0 auto; padding: 48px 24px 72px; }
-      .hero {
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 28px;
-        padding: 28px;
-        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.05);
-      }
-      .eyebrow {
-        margin: 0;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.24em;
-        text-transform: uppercase;
-        color: #7b6752;
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 56px 24px 80px;
       }
       h1 {
-        margin: 14px 0 8px;
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: clamp(2.5rem, 5vw, 4rem);
+        margin: 0 0 14px;
+        font-size: clamp(2.5rem, 6vw, 4rem);
         line-height: 0.95;
       }
       h2 {
-        margin: 0 0 10px;
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: 1.45rem;
+        margin: 36px 0 12px;
+        font-size: 1.5rem;
       }
-      p { margin: 0; font-size: 1rem; line-height: 1.75; color: var(--muted); }
-      .meta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
-      .chip {
-        border-radius: 999px;
-        background: var(--chip);
-        padding: 9px 13px;
-        font-size: 0.82rem;
-        font-weight: 700;
-        color: var(--text);
+      p {
+        margin: 0 0 16px;
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #465466;
       }
-      figure {
-        margin: 22px 0 0;
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 22px;
+      .lead {
+        font-size: 1.08rem;
+        color: #374454;
+      }
+      .figure {
+        margin: 28px 0 10px;
         padding: 16px;
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid #d8d0c5;
+        border-radius: 18px;
       }
       img {
         display: block;
         width: 100%;
         height: auto;
-        border-radius: 14px;
+        border-radius: 12px;
         border: 1px solid #d9e0e6;
         background: #fff;
       }
       figcaption {
         margin-top: 12px;
+        font-family: Arial, sans-serif;
         font-size: 0.92rem;
         line-height: 1.6;
-        color: #5d6a77;
+        color: #5c6978;
       }
-      .grid {
-        display: grid;
-        gap: 18px;
-        margin-top: 26px;
-      }
-      .section {
-        border: 1px solid var(--border);
-        border-radius: 22px;
-        background: var(--card);
-        padding: 22px;
-      }
-      .cta {
-        display: inline-flex;
-        margin-top: 16px;
+      .download {
+        display: inline-block;
+        margin-top: 18px;
         border-radius: 999px;
-        background: var(--accent);
-        color: white;
+        background: #0f172a;
+        color: #fff;
         padding: 12px 18px;
+        font-family: Arial, sans-serif;
         font-size: 0.92rem;
         font-weight: 700;
         text-decoration: none;
       }
-      @media (min-width: 860px) {
-        .grid { grid-template-columns: 1fr 1fr; }
+      .kicker {
+        margin-bottom: 12px;
+        font-family: Arial, sans-serif;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #7a6751;
       }
     </style>
   </head>
   <body>
     <main>
-      <section class="hero">
-        <p class="eyebrow">Project Article</p>
-        <h1>Transfer Learning on CIFAR</h1>
-        <p>This article summarizes a structured deep-learning study built to compare from-scratch image classification against several transfer-learning paths under aligned experimental conditions.</p>
-        <div class="meta">
-          <span class="chip">PyTorch</span>
-          <span class="chip">Transfer Learning</span>
-          <span class="chip">ResNet50</span>
-          <span class="chip">CIFAR10 / CIFAR100</span>
-        </div>
-        <figure>
-          <img src="/reports/visuals/transfer-learning-cifar.svg" alt="Transfer learning workflow diagram" />
-          <figcaption>
-            Visual summary derived directly from the notebook structure. It shows the four-part comparison used in the project: scratch baseline, ImageNet transfer, Places365 transfer, and multi-stage transfer through CIFAR100.
-          </figcaption>
-        </figure>
-      </section>
+      <div class="kicker">Project Report</div>
+      <h1>Transfer Learning on CIFAR</h1>
+      <p class="lead">
+        This project investigates how different transfer-learning strategies affect image
+        classification performance on CIFAR datasets. Instead of relying on a single baseline, the
+        work compares several training paths so the results are easier to interpret and defend.
+      </p>
 
-      <div class="grid">
-        <section class="section">
-          <h2>What the project does</h2>
-          <p>The notebook tests whether pretrained vision models improve classification performance compared with training a custom CNN from scratch. It measures that question across multiple paths instead of only one fine-tuning setup, which makes the final comparison more defensible.</p>
-        </section>
-        <section class="section">
-          <h2>How it was built</h2>
-          <p>The implementation uses deterministic seeds, shared data loaders, reusable training utilities, and reporting blocks for Top-1 accuracy, macro-F1, learning curves, and confusion matrices. That structure keeps the experiment reproducible and the comparisons fair.</p>
-        </section>
-        <section class="section">
-          <h2>Why the image is here</h2>
-          <p>The article visual is not decorative. It condenses the exact experiment path used in the notebook so the reader can understand the study before opening the code. It is sized and framed to render cleanly inside the article page.</p>
-        </section>
-        <section class="section">
-          <h2>Artifact access</h2>
-          <p>The downloadable archive linked below contains the original notebook file used for the project, including the full experiment code and the writeup scaffold inside the notebook itself.</p>
-          <a class="cta" href="/reports/transfer-learning-cifar-project.zip">Download Notebook</a>
-        </section>
-      </div>
+      <h2>Project Overview</h2>
+      <p>
+        The notebook was built as a comparative study. It includes a from-scratch convolutional
+        baseline, an ImageNet transfer-learning path, a Places365 transfer path, and a multi-stage
+        transfer path that moves through CIFAR100 before the final CIFAR10 task. The main purpose
+        was to determine when pretrained representations provide a measurable advantage over
+        training from scratch.
+      </p>
+
+      <h2>How It Was Created</h2>
+      <p>
+        The implementation was structured as a reproducible experiment pipeline in PyTorch. Shared
+        data-loading utilities, controlled seeds, repeated runs, and common evaluation functions
+        were used so that the comparisons stayed aligned across all parts of the study. The
+        notebook also reports Top-1 accuracy, macro-F1, learning curves, and confusion matrices so
+        the analysis is not based on one metric alone.
+      </p>
+
+      <figure class="figure">
+        <img src="/reports/visuals/transfer-learning-cifar.svg" alt="Transfer learning workflow diagram" />
+        <figcaption>
+          Figure 1. Summary of the four-part experimental design used in the notebook, showing the
+          progression from a scratch baseline to multiple pretrained transfer paths.
+        </figcaption>
+      </figure>
+
+      <h2>Artifact Summary</h2>
+      <p>
+        The visual above is included to make the project readable as a report, not just as a code
+        archive. It compresses the notebook’s full experiment structure into a single view that
+        shows what was compared and how the workflow was organized.
+      </p>
+
+      <a class="download" href="/reports/transfer-learning-cifar-project.zip">Download Notebook</a>
     </main>
   </body>
 </html>

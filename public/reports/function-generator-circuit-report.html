@@ -3,70 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Function Generator Circuit Simulation Article</title>
+    <title>Function Generator Circuit Simulation</title>
     <style>
-      :root {
-        --bg: #f7f2ea; --panel: rgba(255, 250, 243, 0.88); --card: rgba(255,255,255,0.76);
-        --border: #d7cec1; --text: #17212b; --muted: #51606f; --accent: #0f172a; --chip: #efe5d8;
-      }
-      * { box-sizing: border-box; }
-      body { margin: 0; color: var(--text); font-family: Arial, sans-serif; background: radial-gradient(circle at top left, rgba(176,137,104,.14), transparent 24%), linear-gradient(180deg, #f7f2ea 0%, #f7f4ef 100%); }
-      main { max-width: 980px; margin: 0 auto; padding: 48px 24px 72px; }
-      .hero { background: var(--panel); border: 1px solid var(--border); border-radius: 28px; padding: 28px; box-shadow: 0 18px 40px rgba(15,23,42,.05); }
-      .eyebrow { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: #7b6752; }
-      h1 { margin: 14px 0 8px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: .95; }
-      h2 { margin: 0 0 10px; font-family: Georgia, "Times New Roman", serif; font-size: 1.45rem; }
-      p { margin: 0; font-size: 1rem; line-height: 1.75; color: var(--muted); }
-      .meta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
-      .chip { border-radius: 999px; background: var(--chip); padding: 9px 13px; font-size: .82rem; font-weight: 700; color: var(--text); }
-      figure { margin: 22px 0 0; background: var(--card); border: 1px solid var(--border); border-radius: 22px; padding: 16px; }
-      img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid #d9e0e6; background: #fff; }
-      figcaption { margin-top: 12px; font-size: .92rem; line-height: 1.6; color: #5d6a77; }
-      .grid { display: grid; gap: 18px; margin-top: 26px; }
-      .section { border: 1px solid var(--border); border-radius: 22px; background: var(--card); padding: 22px; }
-      .cta { display: inline-flex; margin-top: 16px; border-radius: 999px; background: var(--accent); color: white; padding: 12px 18px; font-size: .92rem; font-weight: 700; text-decoration: none; }
-      @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
+      body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: #1b2430; background: #f7f4ef; }
+      main { max-width: 860px; margin: 0 auto; padding: 56px 24px 80px; }
+      h1 { margin: 0 0 14px; font-size: clamp(2.4rem, 6vw, 3.8rem); line-height: 0.95; }
+      h2 { margin: 36px 0 12px; font-size: 1.5rem; }
+      p { margin: 0 0 16px; font-family: Arial, sans-serif; font-size: 1rem; line-height: 1.8; color: #465466; }
+      .lead { font-size: 1.08rem; color: #374454; }
+      .figure { margin: 28px 0 10px; padding: 16px; background: rgba(255,255,255,0.72); border: 1px solid #d8d0c5; border-radius: 18px; }
+      img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #d9e0e6; background: #fff; }
+      figcaption { margin-top: 12px; font-family: Arial, sans-serif; font-size: 0.92rem; line-height: 1.6; color: #5c6978; }
+      .download { display: inline-block; margin-top: 18px; border-radius: 999px; background: #0f172a; color: #fff; padding: 12px 18px; font-family: Arial, sans-serif; font-size: 0.92rem; font-weight: 700; text-decoration: none; }
+      .kicker { margin-bottom: 12px; font-family: Arial, sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #7a6751; }
     </style>
   </head>
   <body>
     <main>
-      <section class="hero">
-        <p class="eyebrow">Project Article</p>
-        <h1>Function Generator Circuit Simulation</h1>
-        <p>This article summarizes the Micro-Cap circuit file used to model a function-generator design built from a waveform source, active amplifier stages, and a passive timing network.</p>
-        <div class="meta">
-          <span class="chip">Micro-Cap</span>
-          <span class="chip">Analog Design</span>
-          <span class="chip">Op-Amp Modeling</span>
-          <span class="chip">Waveform Generation</span>
-        </div>
-        <figure>
-          <img src="/reports/visuals/function-generator-circuit.svg" alt="Function generator simulation structure" />
-          <figcaption>
-            High-level view generated from the circuit file references. It condenses the waveform source, active analog stages, and passive network into a readable article graphic.
-          </figcaption>
-        </figure>
-      </section>
+      <div class="kicker">Project Report</div>
+      <h1>Function Generator Circuit Simulation</h1>
+      <p class="lead">
+        This project documents a function-generator design modeled in Micro-Cap using a waveform
+        source, active analog stages, and a passive conditioning network.
+      </p>
 
-      <div class="grid">
-        <section class="section">
-          <h2>What the project does</h2>
-          <p>The circuit models a function-generator architecture in simulation. The source file references a triangle-wave source, resistor and capacitor elements, and op-amp models that shape, buffer, or condition the generated signal.</p>
-        </section>
-        <section class="section">
-          <h2>How it was built</h2>
-          <p>The design is stored as a Micro-Cap <code>.cir</code> file with schematic metadata and model definitions. Those references include a triangle waveform model and multiple amplifier models, which were used here to reconstruct the system as a cleaner article visual.</p>
-        </section>
-        <section class="section">
-          <h2>Why the image is here</h2>
-          <p>The article graphic is included so the project reads well in a browser even though the original artifact is a simulation file rather than a web-native image. It gives the reader a quick system-level understanding before they open the circuit files.</p>
-        </section>
-        <section class="section">
-          <h2>Artifact access</h2>
-          <p>The project archive linked below contains the original Micro-Cap circuit files used for the simulation work.</p>
-          <a class="cta" href="/reports/function-generator-circuit-project.zip">Download Circuit Files</a>
-        </section>
-      </div>
+      <h2>Project Overview</h2>
+      <p>
+        The simulation file represents a function-generator circuit intended to shape and manage an
+        output waveform through analog components. The design references a triangle-wave source,
+        op-amp models, and multiple resistor-capacitor elements used for timing and conditioning.
+      </p>
+
+      <h2>How It Was Created</h2>
+      <p>
+        The project was created as a Micro-Cap <code>.cir</code> schematic file with embedded model
+        definitions and component metadata. Those references include the waveform model, amplifier
+        stages, and passive network elements that define how the simulated signal is generated and
+        shaped inside the circuit environment.
+      </p>
+
+      <figure class="figure">
+        <img src="/reports/visuals/function-generator-circuit.svg" alt="Function generator simulation structure" />
+        <figcaption>
+          Figure 1. High-level reconstruction of the function-generator simulation based on the
+          circuit file’s waveform, active-stage, and passive-network references.
+        </figcaption>
+      </figure>
+
+      <h2>Artifact Summary</h2>
+      <p>
+        Because the original project artifact is a simulation file rather than a web-native image,
+        the diagram above is used to present the circuit architecture in a report-friendly form
+        without losing the structure implied by the original file.
+      </p>
+
+      <a class="download" href="/reports/function-generator-circuit-project.zip">Download Circuit Files</a>
     </main>
   </body>
 </html>
