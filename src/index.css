@@ -12,17 +12,17 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: #1746d2;
+  background: #365f96;
   color: #ffffff;
-  font-family: "Instrument Serif", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-family: "Aptos", "Segoe UI", sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: inherit;
-  letter-spacing: -0.02em;
+  font-family: "Instrument Serif", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  letter-spacing: -0.03em;
 }
 
 ::selection {

@@ -14,9 +14,9 @@
 
 .wordmark {
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -31,7 +31,7 @@
 .hero-links a,
 .list-item a,
 .contact-links a {
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(255, 255, 255, 0.78);
   text-decoration: none;
 }
 
@@ -55,12 +55,12 @@
 
 .hero h1 {
   margin: 0;
-  max-width: 680px;
+  max-width: 640px;
   color: #ffffff;
-  font-size: clamp(3.2rem, 9vw, 5.6rem);
+  font-size: clamp(3rem, 8vw, 5.1rem);
   font-weight: 500;
-  letter-spacing: -0.05em;
-  line-height: 0.92;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
 }
 
 .intro,
@@ -69,14 +69,15 @@
 .topnav a,
 .hero-links a,
 .contact-links a {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
-  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+  line-height: 1.65;
 }
 
 .intro {
   margin: 20px 0 0;
-  max-width: 500px;
+  max-width: 460px;
 }
 
 .hero-links,
@@ -94,7 +95,7 @@
 .section-heading h2 {
   margin: 0;
   color: #ffffff;
-  font-size: 1.45rem;
+  font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: -0.04em;
 }
@@ -122,9 +123,9 @@
 .list-item h3 {
   margin: 0;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.035em;
 }
 
 .list-item p {
@@ -133,7 +134,7 @@
 
 .meta {
   margin-top: 4px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .meta span {
@@ -143,7 +144,9 @@
 .list-item a {
   align-self: start;
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
