@@ -1,6 +1,6 @@
 .site-shell {
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 720px;
   padding: 32px 24px 72px;
 }
 
@@ -24,7 +24,7 @@
 .topnav {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 16px;
 }
 
 .topnav a,
@@ -46,7 +46,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 56px;
 }
 
 .hero {
@@ -76,31 +76,31 @@
 
 .intro {
   margin: 20px 0 0;
-  max-width: 520px;
+  max-width: 500px;
 }
 
 .hero-links,
 .contact-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
-  margin-top: 20px;
+  gap: 14px;
+  margin-top: 16px;
 }
 
 .section {
-  padding-top: 4px;
+  padding-top: 0;
 }
 
 .section-heading h2 {
   margin: 0;
   color: #111111;
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   font-weight: 500;
   letter-spacing: -0.04em;
 }
 
 .list {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .list-item {
@@ -108,11 +108,10 @@
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 20px;
   padding: 18px 0;
-  border-top: 1px solid #ececec;
+  border-top: 0;
 }
 
 .list-item:first-child {
-  border-top: 0;
   padding-top: 0;
 }
 
@@ -129,11 +128,11 @@
 }
 
 .list-item p {
-  margin: 10px 0 0;
+  margin: 6px 0 0;
 }
 
 .meta {
-  margin-top: 8px;
+  margin-top: 4px;
   font-size: 0.95rem;
 }
 
