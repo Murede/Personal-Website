@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
 @import "tailwindcss";
 
 html {
@@ -11,9 +12,9 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: #faf8f3;
-  color: #111111;
-  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  background: #1746d2;
+  color: #ffffff;
+  font-family: "Instrument Serif", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 
 h1,
@@ -25,7 +26,7 @@ h4 {
 }
 
 ::selection {
-  background: rgba(17, 17, 17, 0.12);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 #root {
