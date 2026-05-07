@@ -120,6 +120,32 @@
   grid-template-columns: minmax(0, 1fr);
 }
 
+.project-item {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  padding: 22px 0;
+}
+
+.project-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.project-copy {
+  max-width: 540px;
+}
+
+.project-item a {
+  justify-self: start;
+}
+
 .list-item h3 {
   margin: 0;
   color: #ffffff;

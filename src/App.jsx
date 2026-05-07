@@ -4,35 +4,35 @@ const projects = [
   {
     title: 'Transfer Learning on CIFAR',
     description: 'Transfer learning experiments for image classification.',
-    link: '/reports/transfer-learning-cifar-report.html',
+    link: '/projects/transfer-learning-cifar-report.html',
     label: 'View',
   },
   {
     title: 'BART Summarization Pipeline',
     description: 'NLP summarization project built with BART.',
-    link: '/reports/bart-summarization-report.html',
+    link: '/projects/bart-summarization-report.html',
     label: 'View',
   },
   {
     title: 'Robot Car Control System',
     description: 'Control logic for a robot car with sensing and feedback.',
-    link: '/reports/cps-robot-car-report.html',
+    link: '/projects/cps-robot-car-report.html',
     label: 'View',
   },
 ]
 
 const experience = [
   {
+    title: 'High School Tutor',
+    org: 'NPHP Tutoring',
+    period: 'Sep 2024 - Present',
+    description: 'Tutoring IB Math, Chemistry, and Physics while tracking progress and learning plans.',
+  },
+  {
     title: 'Software Engineering Intern',
     org: 'Zora Corp',
     period: 'May 2024 - Aug 2024',
     description: 'Python, SQL, and automation work.',
-  },
-  {
-    title: 'Electrical Team Contributor',
-    org: 'WeMars',
-    period: 'Sept 2024 - Present',
-    description: 'Electrical systems work for a student rover team.',
   },
 ]
 
@@ -73,8 +73,11 @@ function App() {
 
           <div className="list">
             {projects.map((project) => (
-              <article key={project.title} className="list-item">
-                <div>
+              <article key={project.title} className="list-item project-item">
+                <div className="project-visual" aria-hidden="true">
+                  Image placeholder
+                </div>
+                <div className="project-copy">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
                 </div>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber-Physical Robot Car Control</title>
+    <style>
+      body {
+        margin: 0;
+        background: #365f96;
+        color: #ffffff;
+        font-family: "Aptos", "Segoe UI", sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 40px 24px 72px;
+      }
+      a {
+        color: rgba(255, 255, 255, 0.82);
+        text-decoration: none;
+      }
+      a:hover {
+        color: #ffffff;
+      }
+      .back {
+        display: inline-block;
+        margin-bottom: 36px;
+        font-size: 0.95rem;
+        letter-spacing: 0.03em;
+      }
+      h1,
+      h2 {
+        font-family: "Instrument Serif", Georgia, serif;
+        font-weight: 400;
+      }
+      h1 {
+        margin: 0 0 14px;
+        font-size: clamp(3rem, 8vw, 5rem);
+        line-height: 0.94;
+        letter-spacing: -0.04em;
+      }
+      h2 {
+        margin: 40px 0 10px;
+        font-size: 1.7rem;
+        letter-spacing: -0.03em;
+      }
+      p {
+        margin: 0 0 14px;
+        max-width: 620px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+      .kicker {
+        margin-bottom: 12px;
+        color: rgba(255, 255, 255, 0.64);
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .lead {
+        max-width: 560px;
+        font-size: 1.06rem;
+      }
+      .figure {
+        margin: 28px 0 8px;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.03);
+      }
+      figcaption {
+        margin-top: 12px;
+        color: rgba(255, 255, 255, 0.62);
+        font-size: 0.92rem;
+        line-height: 1.6;
+      }
+      .download {
+        display: inline-block;
+        margin-top: 18px;
+        color: #ffffff;
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="/">Back to home</a>
+      <div class="kicker">Project</div>
+      <h1>Cyber-Physical Robot Car Control</h1>
+      <p class="lead">
+        This project combines sensing, logic, and actuation in a Python control program for a
+        small autonomous car.
+      </p>
+
+      <h2>Overview</h2>
+      <p>
+        The system reads infrared line-following sensors to determine vehicle position relative to
+        a path and updates motor behavior accordingly. It also integrates ultrasonic obstacle
+        detection so the car can stop, reverse, and attempt a local recovery maneuver when the
+        path ahead is blocked.
+      </p>
+
+      <h2>Build</h2>
+      <p>
+        The implementation is centered on a <code>Car</code> class that manages the motor driver,
+        infrared sensors, ultrasonic sensor, servo, LEDs, buzzer, and ADC. The control logic in
+        <code>mode_infrared()</code> translates sensor states into directional decisions and then
+        into motor commands.
+      </p>
+
+      <figure class="figure">
+        <img src="/projects/visuals/cps-robot-car.svg" alt="Robot car control loop diagram" />
+        <figcaption>
+          A simplified view of the control flow from sensor input to line classification, motor
+          output, and obstacle response.
+        </figcaption>
+      </figure>
+
+      <a class="download" href="/projects/cps-robot-car-project.zip">Download source</a>
+    </main>
+  </body>
+</html>
