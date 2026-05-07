@@ -19,6 +19,30 @@ const projects = [
     link: '/projects/cps-robot-car-report.html',
     label: 'View',
   },
+  {
+    title: 'Function Generator Circuit Simulation',
+    description: 'Analog circuit simulation for waveform generation and signal shaping.',
+    link: '/projects/function-generator-circuit-report.html',
+    label: 'View',
+  },
+  {
+    title: 'TTOMPH',
+    description: 'Microplastics detection prototype for aquaculture monitoring.',
+    link: '/projects/ttomph-report.pdf',
+    label: 'View',
+  },
+  {
+    title: 'Food Vision Model',
+    description: 'Computer vision model for food image classification.',
+    link: 'https://github.com/',
+    label: 'View',
+  },
+  {
+    title: 'Resistor Predictor CNN',
+    description: 'CNN-based modeling project for resistor-related prediction tasks.',
+    link: 'https://github.com/',
+    label: 'View',
+  },
 ]
 
 const experience = [
