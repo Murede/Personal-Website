@@ -5,11 +5,11 @@ import functionGeneratorImage from './assets/functiongenerator.jpg'
 
 const projects = [
   {
-    title: 'Instacart Reorder Prediction',
-    description: 'Machine learning pipeline combining SQL feature engineering and Python model training to predict product reorders.',
-    link: 'https://github.com/Murede/Instacart-Reorder-Prediction',
+    title: 'TTOMPH',
+    description: 'Microplastics detection prototype for aquaculture monitoring.',
+    link: 'https://github.com/Murede/TTOMPpH',
     label: 'View',
-    image: '/projects/visuals/bart-summarization.svg',
+    image: '/projects/visuals/transfer-learning-cifar.svg',
   },
   {
     title: 'Transfer Learning on CIFAR',
@@ -40,11 +40,11 @@ const projects = [
     image: functionGeneratorImage,
   },
   {
-    title: 'TTOMPH',
-    description: 'Microplastics detection prototype for aquaculture monitoring.',
-    link: 'https://github.com/Murede/TTOMPpH',
+    title: 'Instacart Reorder Prediction',
+    description: 'Machine learning pipeline combining SQL feature engineering and Python model training to predict product reorders.',
+    link: 'https://github.com/Murede/Instacart-Reorder-Prediction',
     label: 'View',
-    image: '/projects/visuals/transfer-learning-cifar.svg',
+    image: '/projects/visuals/bart-summarization.svg',
   },
   {
     title: 'Resistor Predictor CNN',
