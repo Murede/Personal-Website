@@ -5,6 +5,13 @@ import functionGeneratorImage from './assets/functiongenerator.jpg'
 
 const projects = [
   {
+    title: 'Instacart Reorder Prediction',
+    description: 'Machine learning pipeline combining SQL feature engineering and Python model training to predict product reorders.',
+    link: 'https://github.com/Murede/Instacart-Reorder-Prediction',
+    label: 'View',
+    image: '/projects/visuals/bart-summarization.svg',
+  },
+  {
     title: 'Transfer Learning on CIFAR',
     description: 'Transfer learning experiments for image classification.',
     link: 'https://github.com/Murede/Transfer-Learning-on-CIFAR',
@@ -38,13 +45,6 @@ const projects = [
     link: 'https://github.com/Murede/TTOMPpH',
     label: 'View',
     image: '/projects/visuals/transfer-learning-cifar.svg',
-  },
-  {
-    title: 'Instacart Reorder Prediction',
-    description: 'Machine learning pipeline combining SQL feature engineering and Python model training to predict product reorders.',
-    link: 'https://github.com/Murede/Instacart-Reorder-Prediction',
-    label: 'View',
-    image: '/projects/visuals/bart-summarization.svg',
   },
   {
     title: 'Resistor Predictor CNN',
@@ -108,12 +108,12 @@ function App() {
           <div className="list">
             {projects.map((project) => (
               <article key={project.title} className="list-item project-item">
-                <div className="project-visual">
-                  <img src={project.image} alt={`${project.title} preview`} />
-                </div>
                 <div className="project-copy">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
+                </div>
+                <div className="project-visual">
+                  <img src={project.image} alt={`${project.title} preview`} />
                 </div>
                 <a href={project.link} target="_blank" rel="noreferrer">
                   {project.label}
