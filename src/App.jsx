@@ -26,13 +26,6 @@ const projects = [
     image: summarizationImage,
   },
   {
-    title: 'Robot Car Control System',
-    description: 'Control logic for a robot car with sensing and feedback.',
-    link: 'https://github.com/Murede/Robot-Car-Control-System',
-    label: 'View',
-    image: '/projects/visuals/cps-robot-car.svg',
-  },
-  {
     title: 'Function Generator Circuit Simulation',
     description: 'Analog circuit simulation for waveform generation and signal shaping.',
     link: '/projects/function-generator-circuit-report.html',
