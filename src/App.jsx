@@ -4,6 +4,7 @@ import summarizationImage from './assets/NLP.jpg'
 import functionGeneratorImage from './assets/functiongenerator.jpg'
 import ttomphImage from './assets/TTOMPH.jpg'
 import instacartImage from './assets/Instacart_Prediction.jpg'
+import resistorPredictorImage from './assets/Resistor-Predictor.jpg'
 
 const projects = [
   {
@@ -46,7 +47,7 @@ const projects = [
     description: 'CNN-based modeling project for resistor-related prediction tasks.',
     link: 'https://huggingface.co/spaces/Murede/Resistor_Predictor_CNN',
     label: 'View',
-    image: '/projects/visuals/function-generator-circuit.svg',
+    image: resistorPredictorImage,
   },
 ]
 
