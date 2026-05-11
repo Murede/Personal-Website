@@ -2,6 +2,8 @@ import './App.css'
 import transferLearningImage from './assets/AI-Transfer-Learning.jpg'
 import summarizationImage from './assets/NLP.jpg'
 import functionGeneratorImage from './assets/functiongenerator.jpg'
+import ttomphImage from './assets/TTOMPH.jpg'
+import instacartImage from './assets/Instacart_Prediction.jpg'
 
 const projects = [
   {
@@ -9,7 +11,7 @@ const projects = [
     description: 'Microplastics detection prototype for aquaculture monitoring.',
     link: 'https://github.com/Murede/TTOMPpH',
     label: 'View',
-    image: '/projects/visuals/transfer-learning-cifar.svg',
+    image: ttomphImage,
   },
   {
     title: 'Transfer Learning on CIFAR',
@@ -37,12 +39,12 @@ const projects = [
     description: 'Machine learning pipeline combining SQL feature engineering and Python model training to predict product reorders.',
     link: 'https://github.com/Murede/Instacart-Reorder-Prediction',
     label: 'View',
-    image: '/projects/visuals/bart-summarization.svg',
+    image: instacartImage,
   },
   {
     title: 'Resistor Predictor CNN',
     description: 'CNN-based modeling project for resistor-related prediction tasks.',
-    link: 'https://github.com/Murede/Resistor-Predictor-CNN',
+    link: 'https://huggingface.co/spaces/Murede/Resistor_Predictor_CNN',
     label: 'View',
     image: '/projects/visuals/function-generator-circuit.svg',
   },
