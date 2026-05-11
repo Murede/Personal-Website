@@ -2,7 +2,7 @@ import './App.css'
 import transferLearningImage from './assets/AI-Transfer-Learning.jpg'
 import summarizationImage from './assets/NLP.jpg'
 import functionGeneratorImage from './assets/functiongenerator.jpg'
-import ttomphImage from './assets/TTOMPH.JPG'
+import ttomphImage from './assets/TTOMPH.jpg'
 import instacartImage from './assets/Instacart_Prediction.jpg'
 import resistorPredictorImage from './assets/Resistor-Predictor.jpg'
 
