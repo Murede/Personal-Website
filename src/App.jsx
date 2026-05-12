@@ -9,51 +9,51 @@ import resistorPredictorImage from './assets/Resistor-Predictor.jpg'
 const projects = [
   {
     title: 'TTOMPH',
-    description: 'Microplastics detection prototype for aquaculture monitoring.',
+    description: 'Real-time microplastics detection prototype for aquaculture using laser scatter sensing, photodiode measurement, ESP32 processing, and a live-monitoring app.',
     link: 'https://github.com/Murede/TTOMPpH',
     label: 'View',
     image: ttomphImage,
-    tools: 'Tools: ESP32, sensing hardware, embedded prototyping',
+    tools: '505 nm green laser, photodiode sensing, ESP32, Wi-Fi data transfer, live-monitoring app',
   },
   {
     title: 'Transfer Learning on CIFAR',
-    description: 'Transfer learning experiments for image classification.',
+    description: 'Image classification study on CIFAR that compares from-scratch training, ImageNet transfer, Places365 transfer, and staged fine-tuning paths under a shared evaluation setup.',
     link: 'https://github.com/Murede/Transfer-Learning-on-CIFAR',
     label: 'View',
     image: transferLearningImage,
-    tools: 'Tools: Python, PyTorch, torchvision, scikit-learn',
+    tools: 'Python, PyTorch, torchvision, scikit-learn',
   },
   {
     title: 'BART Summarization Pipeline',
-    description: 'NLP summarization project built with BART.',
+    description: 'Abstractive summarization project built on BART that compares a baseline pretrained model against a version further adapted with denoising before supervised fine-tuning on XSum.',
     link: 'https://github.com/Murede/BART-Summarization-Pipeline',
     label: 'View',
     image: summarizationImage,
-    tools: 'Tools: Python, PyTorch, Transformers, Hugging Face Datasets',
+    tools: 'Python, PyTorch, Transformers, Hugging Face Datasets',
   },
   {
     title: 'Function Generator Circuit Simulation',
-    description: 'Analog circuit simulation for waveform generation and signal shaping.',
+    description: 'Analog function generator simulation focused on waveform generation, signal shaping, and verification of circuit behavior before physical implementation.',
     link: '/projects/function-generator-circuit-report.html',
     label: 'View',
     image: functionGeneratorImage,
-    tools: 'Tools: Micro-Cap, analog circuit simulation, op-amp design',
+    tools: 'Micro-Cap, analog circuit simulation, op-amp design',
   },
   {
     title: 'Instacart Reorder Prediction',
-    description: 'Machine learning pipeline combining SQL feature engineering and Python model training to predict product reorders.',
+    description: 'Machine learning pipeline for predicting product reorders using SQL-based feature engineering, relational dataset preparation, and Python model training on Instacart data.',
     link: 'https://github.com/Murede/Instacart-Reorder-Prediction',
     label: 'View',
     image: instacartImage,
-    tools: 'Tools: Python, SQL, pandas, scikit-learn',
+    tools: 'Python, SQL, pandas, scikit-learn',
   },
   {
     title: 'Resistor Predictor CNN',
-    description: 'CNN-based modeling project for resistor-related prediction tasks.',
+    description: 'CNN-based prediction project that applies deep learning to resistor-related inputs and outputs through model training, inference, and interactive deployment.',
     link: 'https://huggingface.co/spaces/Murede/Resistor_Predictor_CNN',
     label: 'View',
     image: resistorPredictorImage,
-    tools: 'Tools: Python, CNNs, model inference, Hugging Face Spaces',
+    tools: 'Python, CNNs, model inference, Hugging Face Spaces',
   },
 ]
 
@@ -117,7 +117,10 @@ function App() {
                 <div className="project-visual">
                   <img src={project.image} alt={`${project.title} preview`} />
                 </div>
-                <p className="project-tools">{project.tools}</p>
+                <div className="project-tools">
+                  <p className="project-tools-label">Tools</p>
+                  <p className="project-tools-copy">{project.tools}</p>
+                </div>
                 <a href={project.link} target="_blank" rel="noreferrer">
                   {project.label}
                 </a>

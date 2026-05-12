@@ -147,7 +147,24 @@
 }
 
 .project-tools {
+  display: grid;
+  gap: 4px;
+}
+
+.project-tools-label,
+.project-tools-copy {
   margin: 0;
+}
+
+.project-tools-label {
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-tools-copy {
   color: rgba(255, 255, 255, 0.68);
   font-size: 0.88rem;
   line-height: 1.55;
