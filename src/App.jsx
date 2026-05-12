@@ -13,6 +13,7 @@ const projects = [
     link: 'https://github.com/Murede/TTOMPpH',
     label: 'View',
     image: ttomphImage,
+    tools: 'Tools: ESP32, sensing hardware, embedded prototyping',
   },
   {
     title: 'Transfer Learning on CIFAR',
@@ -20,6 +21,7 @@ const projects = [
     link: 'https://github.com/Murede/Transfer-Learning-on-CIFAR',
     label: 'View',
     image: transferLearningImage,
+    tools: 'Tools: Python, PyTorch, torchvision, scikit-learn',
   },
   {
     title: 'BART Summarization Pipeline',
@@ -27,6 +29,7 @@ const projects = [
     link: 'https://github.com/Murede/BART-Summarization-Pipeline',
     label: 'View',
     image: summarizationImage,
+    tools: 'Tools: Python, PyTorch, Transformers, Hugging Face Datasets',
   },
   {
     title: 'Function Generator Circuit Simulation',
@@ -34,6 +37,7 @@ const projects = [
     link: '/projects/function-generator-circuit-report.html',
     label: 'View',
     image: functionGeneratorImage,
+    tools: 'Tools: Micro-Cap, analog circuit simulation, op-amp design',
   },
   {
     title: 'Instacart Reorder Prediction',
@@ -41,6 +45,7 @@ const projects = [
     link: 'https://github.com/Murede/Instacart-Reorder-Prediction',
     label: 'View',
     image: instacartImage,
+    tools: 'Tools: Python, SQL, pandas, scikit-learn',
   },
   {
     title: 'Resistor Predictor CNN',
@@ -48,6 +53,7 @@ const projects = [
     link: 'https://huggingface.co/spaces/Murede/Resistor_Predictor_CNN',
     label: 'View',
     image: resistorPredictorImage,
+    tools: 'Tools: Python, CNNs, model inference, Hugging Face Spaces',
   },
 ]
 
@@ -111,6 +117,7 @@ function App() {
                 <div className="project-visual">
                   <img src={project.image} alt={`${project.title} preview`} />
                 </div>
+                <p className="project-tools">{project.tools}</p>
                 <a href={project.link} target="_blank" rel="noreferrer">
                   {project.label}
                 </a>
