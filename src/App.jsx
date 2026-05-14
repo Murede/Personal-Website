@@ -36,12 +36,12 @@ const projects = [
     tools: 'Python, PyTorch, Transformers, Hugging Face Datasets',
   },
   {
-    title: 'Function Generator Circuit Simulation',
-    description: 'Analog function generator simulation focused on waveform generation, signal shaping, and verification of circuit behavior before physical implementation.',
+    title: 'Function Generator PCB Build',
+    description: 'Physical function generator project designed in Altium, fabricated as a PCB, assembled by soldering components, and systematically tested across each output to verify correct operation.',
     link: '/projects/function-generator-circuit-report.html',
     label: 'Report',
     image: functionGeneratorImage,
-    tools: 'Micro-Cap, analog circuit simulation, op-amp design',
+    tools: 'Altium Designer, PCB layout, soldering, circuit testing, analog hardware validation',
   },
   {
     title: 'Instacart Reorder Prediction',
